@@ -3,8 +3,43 @@
     "name": "Kirby Snippets",
     "organization": "Thomas Günther",
     "description": "Kirby Cheatsheet Completions",
-    "version": "0.6.1",
-    "categories": ["completions"],
+    "version": "0.7.0",
     "repository": "https://github.com/medienbaecker/nova-kirby-snippets",
-	"bugs": "https://github.com/medienbaecker/nova-kirby-snippets/issues"
+    "bugs": "https://github.com/medienbaecker/nova-kirby-snippets/issues",
+
+    "categories": ["completions"],
+    "main": "main.js",
+    "activationEvents": ["onLanguage:php"],
+    "entitlements": {
+      "filesystem": "readonly"
+    },
+
+    "config": [
+        {
+            "key": "medienbaecker.kirby-snippets.config.snippetsPath",
+            "type": "path",
+            "required": true,
+            "title": "Snippets folder",
+            "description": "Relative Path to Kirby’s snippets folder (e.g. `/site/snippets`)",
+            "placeholder": "/site/snippets",
+            "default": "/site/snippets",
+            "allowFiles": false,
+            "allowFolders": true,
+            "relative": true
+        }
+    ],
+
+    "configWorkspace": [
+        {
+            "key": "medienbaecker.kirby-snippets.config.snippetsPath",
+            "type": "path",
+            "title": "Snippets folder",
+            "description": "Relative Path to Kirby’s snippets folder (e.g. `/site/snippets`)",
+            "placeholder": "/site/snippets",
+            "default": "/site/snippets",
+            "allowFiles": false,
+            "allowFolders": true,
+            "relative": true
+        }
+    ],
 }

@@ -1,0 +1,11 @@
+{
+  "extends": "eslint:recommended",
+  "globals": {
+    "exports": "writable",
+    "nova": "readonly",
+    "console": "readonly",
+    "CompletionItem": "readonly",
+    "CompletionItemKind": "readonly",
+  },
+  "parserOptions": { "ecmaVersion": 6 }
+}
